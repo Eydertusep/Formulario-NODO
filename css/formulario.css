@@ -1,0 +1,13 @@
+*{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+legend {
+   font-family: "Noto Music", serif;
+}
+
+.tituloop {
+  color: blueviolet;
+}

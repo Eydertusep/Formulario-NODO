@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <meta name="description" content="Entra ahora a los curos de EAFIT!">
+  <link rel="icon" href="/formulario/img/Form-1.ico">
+  <link rel="stylesheet" href="/formulario/css/formulario.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Faculty+Glyphic&family=Notable&family=Noto+Music&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Formulario inscripcion cursos eafit</h1>
+  <div id="formulario">
+    <form action="mailto:eyderysachez@gmail.com" method="post" enctype="text/plain">
+      <fieldset>
+
+        <legend>Llena la siguiente información</legend>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Alexander" required>
+        <br>
+        <label for="apellidos">apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="rio salamanca" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+        <br>
+        <label for="dirrecion">dirrecion</label>
+        <input type="text" id="dirrecion" name="dirrecion" placeholder="calle 65 37#30">
+        <br>
+        <label for="departamentos">Selecciona tu departamento</label>
+        <select name="departamentos" id="departamentos">
+            <option value="N/A" selected disabled>departamento</option>
+            <option value="ANT">Antioquia</option>
+            <option value="AMA">Amazonas</option>
+            <option value="ARA">Arauca</option>
+            <option value="ATLA">Atlantico</option>
+            <option value="BOG">Bogota D.C</option>
+            <option value="BOL">BOLIVAR</option>
+            <option value="BOY">boyaca</option>
+            <option value="CAR">Cardas</option>
+            <option value="RISARAL">Risaralda</option>
+            <option value="COR">Cordoba</option>
+            <option value="SANT">Santander</option>
+        </select>
+        <br>
+        <label for="pais">Selecciona tu pais de residencia</label>
+        <select name="pais" id="pais" required>
+            <option value="" selected disabled>pais</option>
+            <option value="COL">Colombia</option>
+            <option value="VEN">Venezeula</option>
+            <option value="USA">Estados unidos</option>
+            <option value="CA">Canada</option>
+            <option value="AUS">Australia</option>
+            <option value="PBJ">Paises bajo</option>
+            <option value="PE">Peru</option>
+            <option value="ES">España</option>
+            <option value="CH">China</option>
+            <option value="NW">Norte de Wadiya</option>
+            <option value="WAKA">Wakanda</option>
+        </select>
+        <br>
+        <label for="telefono">Coloca tu numero de celular</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="345856987">
+        <br>
+        <label for="descripcion">Coloque su descripción personal</label>
+        <textarea name="descripcion" id="descripcion" maxlength="300" placeholder="Mido un metro ochenta y uno, tengo un sillón azul En mi cuarto hay un baúl, y me gusta el almendrado Me despierto alunado, mi madre es medio terca Aunque nunca estuve preso, anduve cerca Soy de Aries, pelo castaño Algo tacaño, y no colecciono nada Guardo la ropa ordenada, me aburro en Nochebuena Si estornudo, no hago ruido, y no hablo con la boca llen" ></textarea>
+        <br>
+        <label for="car"> ¿A qué carrera deseas inscribirte? </label>
+        <input id="car" list="carrera" required>
+        <datalist id="carrera">
+          <option>JOBS TO BE DONE</option>
+          <option>CLOUD NATIVE</option>
+          <option>FRONTEND</option>
+          <option>BACKEND</option>
+          <option>FUNDAMENTALS</option>
+          <option>PYTHON</option>
+          <option>MARKETING DIGITAL</option>
+        </datalist>
+        <br>
+        <label for="modalidad">modalidad</label>
+        <select name="modalidad" id="modalidad" required>
+          <option value="virtual">virtual</option>
+          <option value="Presencial">Presencial</option>
+        </select>
+        <br>
+        <label for="ciudad">¿Cual es tu ciudad</label>
+        <select name="ciudad" id="ciudad">
+
+          <optgroup label="Antioquia" class="tituloop">  
+              <option value="Medellin">Medellin</option>
+              <option value="Envigado">Envigado</option>
+              <option value="Itagui">Itagui</option>
+              <option value="Bello">Rio negro</option>
+              <option value="Rio negro">Rio negro</option>
+          </optgroup>
+
+          <optgroup label="Cundinamarca" class="tituloop">
+              <option value="Bogota">Bogota</option>
+              <option value="Soacha">Soacha</option>
+              <option value="Chia">Chia</option>
+              <option value="zipaquira">Zipaquira</option>
+              <option value="girardot">Girardot</option>
+          </optgroup>
+
+          <optgroup label="Valle del Cauca" class="tituloop">
+              <option value="cali">Cali</option>
+              <option value="palmira">palmira</option>
+              <option value="buenaventura">buenaaventura</option>
+              <option value="Jamundi">Jamundi</option>
+              <option value="Buga">Buga</option>
+          </optgroup>
+
+          
+          
+
+        </select>
+        <br>
+        <button type="reset">
+          <img src="/formulario/img/reset.png" alt="" width="60" height="60">
+        </button>
+
+        <button type="submit">
+          <img src="/formulario/img/check.png" alt="" width="60" height="60">
+        </button>
+
+      </fieldset>
+
+
+    </form>
+  </div>
+
+  <a href="/CantanteFavFormulario/index.html">
+    <img src="/formulario/img/atras.png" alt="Volver para atras" width="60" height="60">
+  </a>
+ 
+</body>
+</html>
